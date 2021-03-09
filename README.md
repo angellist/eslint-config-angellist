@@ -28,7 +28,9 @@ yarn add -D \
   'eslint-config-prettier' \
   'eslint-plugin-react' \
   'eslint-plugin-react-hooks' \
-  'prettier'
+  'prettier' \
+  '@typescript-eslint/eslint-plugin' \
+  '@typescript-eslint/parser'
 ```
 
 Modify your `.eslintrc` config:
@@ -81,5 +83,7 @@ yarn add -D \
   'eslint-config-prettier' \
   'eslint-plugin-react' \
   'eslint-plugin-react-hooks' \
-  'prettier'
+  'prettier' \
+  '@typescript-eslint/eslint-plugin' \
+  '@typescript-eslint/parser'
 ```
