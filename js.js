@@ -5,7 +5,9 @@ module.exports = {
     "plugin:react-hooks/recommended",
     "prettier",
   ],
+  parser: "babel-eslint",
   rules: {
+    "jsx-quotes": ["error", "prefer-single"],
     "react/jsx-fragments": ["error", "syntax"],
-  }
+  },
 };
