@@ -26,6 +26,7 @@ module.exports = {
     "react/jsx-props-no-spreading": "off",
     "react/no-unescaped-entities": "off",
     "react/prefer-stateless-function": "warn",
+    "react/require-default-props": [2, { ignoreFunctionalComponents: true }],
     "react/static-property-placement": "off",
   },
   plugins: [
