@@ -12,6 +12,8 @@ yarn add -D \
   '@typescript-eslint/parser' \
   'eslint-config-airbnb-typescript' \
   'eslint-config-prettier' \
+  'eslint-plugin-import' \
+  'eslint-plugin-jsx-a11y' \
   'eslint-plugin-react' \
   'eslint-plugin-react-hooks' \
   'prettier'
@@ -21,7 +23,9 @@ Modify your `.eslintrc` config:
 
 ```js
 "extends": ["angellist"],
-"parser": "@typescript-eslint/parser",
+"parserOptions": {
+  "project": ["./tsconfig.json"]
+},
 ```
 
 
@@ -47,6 +51,8 @@ yarn add -D \
   '@typescript-eslint/parser' \
   'eslint-config-airbnb-typescript' \
   'eslint-config-prettier' \
+  'eslint-plugin-import' \
+  'eslint-plugin-jsx-a11y' \
   'eslint-plugin-react' \
   'eslint-plugin-react-hooks' \
   'prettier'
