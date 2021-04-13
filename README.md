@@ -4,46 +4,24 @@ Sharable ESLint configuration for AngelList.
 
 ### Usage
 
-For JS-based projects:
-
 ```sh
 cd ../another-project
 yarn add -D \
-  'git+https://github.com/angellist/eslint-config-angellist#0.0.1' \
-  'eslint-config-airbnb' \
-  'eslint-config-prettier' \
-  'eslint-plugin-react' \
-  'eslint-plugin-react-hooks' \
-  'prettier' \
-  'babel-eslint'
-```
-
-For TS-based projects:
-
-```sh
-cd ../another-project
-yarn add -D \
-  'git+https://github.com/angellist/eslint-config-angellist#0.0.1' \
+  'git+https://github.com/angellist/eslint-config-angellist#0.0.5' \
+  '@typescript-eslint/eslint-plugin' \
+  '@typescript-eslint/parser' \
   'eslint-config-airbnb-typescript' \
   'eslint-config-prettier' \
   'eslint-plugin-react' \
   'eslint-plugin-react-hooks' \
-  'prettier' \
-  '@typescript-eslint/eslint-plugin' \
-  '@typescript-eslint/parser'
+  'prettier'
 ```
 
 Modify your `.eslintrc` config:
 
 ```js
-"extends": ["angellist/js"],
-```
-
-For TS-based projects:
-
-
-```js
 "extends": ["angellist"],
+"parser": "@typescript-eslint/parser",
 ```
 
 
@@ -59,31 +37,17 @@ cd ../another-project
 yarn link eslint-config-angellist
 ```
 
-For JS-based projects:
-
-```sh
-cd ../another-project
-yarn add -D \
-  'file:../eslint-config-angellist' \
-  'eslint-config-airbnb' \
-  'eslint-config-prettier' \
-  'eslint-plugin-react' \
-  'eslint-plugin-react-hooks' \
-  'prettier' \
-  'babel-eslint'
-```
-
 For TS-based projects:
 
 ```sh
 cd ../another-project
 yarn add -D \
   'file:../eslint-config-angellist' \
+  '@typescript-eslint/eslint-plugin' \
+  '@typescript-eslint/parser' \
   'eslint-config-airbnb-typescript' \
   'eslint-config-prettier' \
   'eslint-plugin-react' \
   'eslint-plugin-react-hooks' \
-  'prettier' \
-  '@typescript-eslint/eslint-plugin' \
-  '@typescript-eslint/parser'
+  'prettier'
 ```

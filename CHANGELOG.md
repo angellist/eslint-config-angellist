@@ -1,5 +1,9 @@
 # Changelog
 
+### [0.0.5](https://github.com/angellist/eslint-config-angellist/compare/0.0.4...0.0.5) - 2021-04-13
+
+* Stop supporting JS-based projects
+
 ### [0.0.4](https://github.com/angellist/eslint-config-angellist/compare/0.0.3...0.0.4) - 2021-04-12
 
 * adds ignoreFunctionalComponents: true for react/require-default-props rule
