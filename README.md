@@ -7,7 +7,7 @@ Sharable ESLint configuration for AngelList.
 ```sh
 cd ../another-project
 yarn add -D \
-  'git+https://github.com/angellist/eslint-config-angellist#0.0.5' \
+  'git+https://github.com/angellist/eslint-config-angellist#0.0.6' \
   '@typescript-eslint/eslint-plugin' \
   '@typescript-eslint/parser' \
   'eslint-config-airbnb-typescript' \
@@ -17,6 +17,8 @@ yarn add -D \
   'eslint-plugin-react' \
   'eslint-plugin-react-hooks' \
   'prettier'
+
+ln -s ./node_modules/eslint-config-angellist/.prettierrc.js .prettierrc.js
 ```
 
 Modify your `.eslintrc` config:

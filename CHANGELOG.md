@@ -1,5 +1,9 @@
 # Changelog
 
+### [0.0.6](https://github.com/angellist/eslint-config-angellist/compare/0.0.5...0.0.6) - 2021-04-16
+
+* Set up Prettier config file.
+
 ### [0.0.5](https://github.com/angellist/eslint-config-angellist/compare/0.0.4...0.0.5) - 2021-04-13
 
 * Stop supporting JS-based projects
