@@ -1,5 +1,9 @@
 # Changelog
 
+### [0.0.7](https://github.com/angellist/eslint-config-angellist/compare/0.0.6...0.0.7) - 2021-04-29
+
+* Customize `import/order` ESLint rule.
+
 ### [0.0.6](https://github.com/angellist/eslint-config-angellist/compare/0.0.5...0.0.6) - 2021-04-16
 
 * Set up Prettier config file.

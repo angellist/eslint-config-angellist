@@ -11,6 +11,15 @@ module.exports = {
     "arrow-body-style": ["error", "as-needed"],
     "import/extensions": "off",
     "import/no-cycle": "warn",
+    "import/order": [
+      "error",
+      {
+        "groups": ["external", "internal", "object"],
+        "pathGroups": [{ "pattern": "~/**", "group": "internal" }],
+        "newlines-between": "always",
+        "alphabetize": { "order": "asc", "caseInsensitive": true },
+      },
+    ],
     "import/prefer-default-export": "off",
     "jsx-a11y/anchor-is-valid": "warn",
     "jsx-a11y/click-events-have-key-events": "warn",
