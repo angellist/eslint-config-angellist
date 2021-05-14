@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-angellist",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Sharable ESLint configuration for AngelList",
   "repository": "https://github.com/angellist/eslint-config-angellist",
   "main": "index.js",
