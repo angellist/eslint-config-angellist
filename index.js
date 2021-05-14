@@ -26,6 +26,7 @@ module.exports = {
     "jsx-a11y/label-has-associated-control": "warn",
     "jsx-a11y/no-static-element-interactions": "warn",
     "jsx-quotes": ["error", "prefer-single"],
+    "no-alert": "off",
     "no-restricted-globals": "off",
     "no-underscore-dangle": "off",
     "prefer-destructuring": "off",

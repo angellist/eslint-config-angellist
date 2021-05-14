@@ -1,5 +1,9 @@
 # Changelog
 
+### [0.0.8](https://github.com/angellist/eslint-config-angellist/compare/0.0.7...0.0.8) - 2021-05-14
+
+* Disable `no-alert` ESLint rule.
+
 ### [0.0.7](https://github.com/angellist/eslint-config-angellist/compare/0.0.6...0.0.7) - 2021-04-29
 
 * Customize `import/order` ESLint rule.
