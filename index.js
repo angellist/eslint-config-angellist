@@ -39,6 +39,16 @@ module.exports = {
     "react/require-default-props": [2, { ignoreFunctionalComponents: true }],
     "react/static-property-placement": "off",
   },
+  overrides: [
+    {
+      files: ["**.ts?(x)"],
+      rules: {
+        // TS supports this rule as a compiler setting
+        // See: https://www.typescriptlang.org/tsconfig#noUnusedLocals
+        "@typescript-eslint/no-unused-vars": "off"
+      }
+    }
+  ],
   plugins: [
     "@typescript-eslint",
   ],
