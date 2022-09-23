@@ -1,5 +1,9 @@
 # Changelog
 
+### [0.1.0](https://github.com/angellist/eslint-config-angellist/compare/0.0.8...0.1.0) - 2022-09-23
+
+* Add support for Rubocop and Prettier Ruby.
+
 ### [0.0.8](https://github.com/angellist/eslint-config-angellist/compare/0.0.7...0.0.8) - 2021-05-14
 
 * Disable `no-alert` ESLint rule.
