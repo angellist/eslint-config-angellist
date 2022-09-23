@@ -9,7 +9,7 @@ Sharable ESLint, Prettier and Rubocop configuration for AngelList.
 ```sh
 cd ../frontend-project
 yarn add -D \
-  'git+https://github.com/angellist/eslint-config-angellist#0.1.0' \
+  'git+https://github.com/angellist/eslint-config-angellist#0.1.1' \
   '@typescript-eslint/eslint-plugin' \
   '@typescript-eslint/parser' \
   'eslint-config-airbnb-typescript' \
@@ -40,7 +40,7 @@ module.exports = {
 ```sh
 cd ../backend-project
 yarn add -D \
-  'git+https://github.com/angellist/eslint-config-angellist#0.1.0' \
+  'git+https://github.com/angellist/eslint-config-angellist#0.1.1' \
   'prettier' \
    @prettier/plugin-ruby
 
@@ -65,20 +65,9 @@ end
 Create `.rubocop.yml`:
 
 ```yml
-inherit_gem:
-  prettier: rubocop.yml
-
-require:
-  - rubocop-graphql
-  - rubocop-performance
-  - rubocop-rails
-  - rubocop-rake
-  - rubocop-rspec
-  - rubocop-thread_safety
-  - ./node_modules/eslint-config-angellist/rubocop-cops/sidekiq_dont_use_keyword_arguments.rb
+inherit_from: ./node_modules/eslint-config-angellist/.rubocop.yml
 
 # Modify the content below depending on your needs
-
 AllCops:
   TargetRailsVersion: 6.0
   TargetRubyVersion: 2.7
@@ -138,8 +127,13 @@ yarn link
 
 cd ../another-project
 yarn link eslint-config-angellist
+```
 
-# Clean up
+To clean up:
+
+```sh
+yarn unlink
+
 cd ../another-project
 yarn unlink eslint-config-angellist
 yarn install
