@@ -1,6 +1,6 @@
 # Changelog
 
-### [0.1.1](https://github.com/angellist/eslint-config-angellist/compare/0.0.8...0.1.1) - 2022-09-23
+### [0.1.1](https://github.com/angellist/eslint-config-angellist/compare/0.1.0...0.1.1) - 2022-09-23
 
 * Extract shared `.rubocop.yml`
 
