@@ -8,6 +8,6 @@ require:
   - rubocop-rake
   - rubocop-rspec
   - rubocop-thread_safety
-  - ./node_modules/eslint-config-angellist/rubocop-cops/sidekiq_dont_use_keyword_arguments.rb
+  - ./rubocop-cops/sidekiq_dont_use_keyword_arguments.rb
 
 # Add Rubocop rules we want to support below

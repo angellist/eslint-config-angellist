@@ -99,7 +99,8 @@ Add this to your `package.json`:
     "eslint --fix"
   ],
   "*.rb": [
-    "bundle exec rbprettier --write"
+    "./node_modules/.bin/prettier --write",
+    "bundle exec rubocop --autocorrect"
   ]
 },
 "scripts": {
