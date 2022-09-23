@@ -102,8 +102,7 @@ Add this to your `package.json`:
 ```json
 "devDependencies": {
   "husky": "^6.0.0",
-  "lint-staged": "^10.5.4",
-  ...
+  "lint-staged": "^10.5.4"
 },
 "lint-staged": {
   "./app/javascript/**/*.{ts,tsx}": [
@@ -115,10 +114,8 @@ Add this to your `package.json`:
   ]
 },
 "scripts": {
-  "prepare": "husky install",
-  ...
-},
-...
+  "prepare": "husky install"
+}
 ```
 
 Run `lint-staged` on pre-commit hooks in `.husky/pre-commit`:
@@ -141,6 +138,11 @@ yarn link
 
 cd ../another-project
 yarn link eslint-config-angellist
+
+# Clean up
+cd ../another-project
+yarn unlink eslint-config-angellist
+yarn install
 ```
 
 ### Releasing
