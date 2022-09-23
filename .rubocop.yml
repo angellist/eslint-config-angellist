@@ -1,0 +1,13 @@
+inherit_gem:
+  prettier: rubocop.yml
+
+require:
+  - rubocop-graphql
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-rake
+  - rubocop-rspec
+  - rubocop-thread_safety
+  - ./node_modules/eslint-config-angellist/rubocop-cops/sidekiq_dont_use_keyword_arguments.rb
+
+# Add Rubocop rules we want to support below
