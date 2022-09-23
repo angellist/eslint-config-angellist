@@ -104,19 +104,16 @@ cd ../another-project
 yarn link eslint-config-angellist
 ```
 
-For TS-based projects:
+### Releasing
+
+To release a new version:
+
+* Update the version in `package.json`
+* Update the version in these README instructions
+* Update [CHANGELOG](CHANGELOG.md)
+* Add a new git tag
 
 ```sh
-cd ../another-project
-yarn add -D \
-  'file:../eslint-config-angellist' \
-  '@typescript-eslint/eslint-plugin' \
-  '@typescript-eslint/parser' \
-  'eslint-config-airbnb-typescript' \
-  'eslint-config-prettier' \
-  'eslint-plugin-import' \
-  'eslint-plugin-jsx-a11y' \
-  'eslint-plugin-react' \
-  'eslint-plugin-react-hooks' \
-  'prettier'
+git tag x.x.x
+git push origin x.x.x
 ```
