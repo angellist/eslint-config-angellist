@@ -41,7 +41,8 @@ module.exports = {
 cd ../backend-project
 yarn add -D \
   'git+https://github.com/angellist/eslint-config-angellist#0.0.8' \
-  'prettier'
+  'prettier' \
+   @prettier/plugin-ruby
 
 ln -s ./node_modules/eslint-config-angellist/.prettierrc.js .prettierrc.js
 ```
@@ -50,7 +51,7 @@ Add the following gems to `Gemfile` and then install them with `bundle install`
 
 ```rb
 group :development do
-  gem 'prettier', require: false
+  gem 'prettier', require: false # contains dependencies necessary for @prettier/plugin-ruby in package.json
   gem 'rubocop', '~> 1.36', require: false
   gem 'rubocop-graphql', require: false
   gem 'rubocop-performance', require: false
@@ -90,6 +91,44 @@ AllCops:
     - script/**/*
     - tmp/**/*
     - vendor/**/*
+```
+
+### Pre-commit hooks
+
+You can also install `husky` to run pre-commit hooks and `lint-staged` to run different linters for changed files.
+
+Add this to your `package.json`:
+
+```json
+"devDependencies": {
+  "husky": "^6.0.0",
+  "lint-staged": "^10.5.4",
+  ...
+},
+"lint-staged": {
+  "./app/javascript/**/*.{ts,tsx}": [
+    "prettier --write",
+    "eslint --fix"
+  ],
+  "*.rb": [
+    "bundle exec rbprettier --write"
+  ]
+},
+"scripts": {
+  "prepare": "husky install",
+  ...
+},
+...
+```
+
+Run `lint-staged` on pre-commit hooks in `.husky/pre-commit`:
+
+```sh
+#!/bin/sh
+
+. "$(dirname "$0")/_/husky.sh"
+
+yarn lint-staged
 ```
 
 ### Development
