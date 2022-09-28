@@ -9,7 +9,7 @@ Sharable ESLint, Prettier and Rubocop configuration for AngelList.
 ```sh
 cd ../frontend-project
 yarn add -D \
-  'git+https://github.com/angellist/eslint-config-angellist#0.1.1' \
+  'git+https://github.com/angellist/eslint-config-angellist#0.1.2' \
   '@typescript-eslint/eslint-plugin' \
   '@typescript-eslint/parser' \
   'eslint-config-airbnb-typescript' \
@@ -39,25 +39,20 @@ module.exports = {
 
 ```sh
 cd ../backend-project
-yarn add -D \
-  'git+https://github.com/angellist/eslint-config-angellist#0.1.1' \
-  'prettier' \
-   @prettier/plugin-ruby
-
-ln -s ./node_modules/eslint-config-angellist/.prettierrc.js .prettierrc.js
+yarn add -D 'git+https://github.com/angellist/eslint-config-angellist#0.1.2'
 ```
 
 Add the following gems to `Gemfile` and then install them with `bundle install`
 
 ```rb
 group :development do
-  gem 'prettier', require: false # contains dependencies necessary for @prettier/plugin-ruby in package.json
   gem 'rubocop', '~> 1.36', require: false
   gem 'rubocop-graphql', require: false
   gem 'rubocop-performance', require: false
   gem 'rubocop-rails', require: false
   gem 'rubocop-rake', require: false
   gem 'rubocop-rspec', require: false
+  gem 'rubocop-shopify', '~> 2.10', require: false
   gem 'rubocop-thread_safety', require: false
 end
 ```
@@ -80,6 +75,9 @@ AllCops:
     - script/**/*
     - tmp/**/*
     - vendor/**/*
+
+# List of all available cops: https://docs.rubocop.org/rubocop/1.36/cops.html
+# List of all enabled cops: bundle exec rubocop rubocop --show-cops
 ```
 
 ### Pre-commit hooks
@@ -99,8 +97,7 @@ Add this to your `package.json`:
     "eslint --fix"
   ],
   "*.rb": [
-    "./node_modules/.bin/prettier --write",
-    "bundle exec rubocop --autocorrect"
+    "bundle exec rubocop --autocorrect --fail-level error"
   ]
 },
 "scripts": {

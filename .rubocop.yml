@@ -1,5 +1,5 @@
 inherit_gem:
-  prettier: rubocop.yml
+  rubocop-shopify: rubocop.yml
 
 require:
   - rubocop-graphql
@@ -10,4 +10,17 @@ require:
   - rubocop-thread_safety
   - ./rubocop-cops/sidekiq_dont_use_keyword_arguments.rb
 
-# Add Rubocop rules we want to support below
+
+# Add Rubocop rules we want to override below, sort them alphabetically
+
+Layout/LineLength: { Enabled: true, Severity: warning, AutoCorrect: false } # lower severity, disable autocorrect
+Naming/InclusiveLanguage: { Enabled: false } # disable
+Naming/PredicateName: { Enabled: false } # disable, need to migrate our DB columns to use this one
+Style/DateTime: { Enabled: false } # disable
+Style/MethodCallWithArgsParentheses: { Enabled: false} # disable
+Style/OpenStructUse: { Enabled: false } # disable
+Style/StringLiterals: { Enabled: true, EnforcedStyle: single_quotes } # use single_quotes
+Style/StringLiteralsInInterpolation: { Enabled: true, EnforcedStyle: single_quotes } # use single_quotes
+Style/TrailingCommaInArguments: { Enabled: true, EnforcedStyleForMultiline: consistent_comma } # enable
+Style/TrailingCommaInBlockArgs: { Enabled: true } # enable
+Style/WordArray: { Enabled: false } # disable

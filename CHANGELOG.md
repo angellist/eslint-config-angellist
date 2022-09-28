@@ -1,5 +1,9 @@
 # Changelog
 
+### [0.1.2](https://github.com/angellist/eslint-config-angellist/compare/0.1.1...0.1.2) - 2022-09-28
+
+* Use Rubocop instead of Prettier Ruby that wraps or merges lines
+
 ### [0.1.1](https://github.com/angellist/eslint-config-angellist/compare/0.1.0...0.1.1) - 2022-09-23
 
 * Extract shared `.rubocop.yml`
