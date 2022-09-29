@@ -97,7 +97,7 @@ Add this to your `package.json`:
     "eslint --fix"
   ],
   "*.rb": [
-    "bundle exec rubocop --autocorrect --fail-level error"
+    "bundle exec rubocop --autocorrect --fail-level error --force-exclusion"
   ]
 },
 "scripts": {
