@@ -24,3 +24,4 @@ Style/StringLiteralsInInterpolation: { Enabled: true, EnforcedStyle: single_quot
 Style/TrailingCommaInArguments: { Enabled: true, EnforcedStyleForMultiline: consistent_comma } # enable
 Style/TrailingCommaInBlockArgs: { Enabled: true } # enable
 Style/WordArray: { Enabled: false } # disable
+Style/BlockDelimiters: { Enabled: true } # {...} for single-line blocks and do..end for multi-line blocks
