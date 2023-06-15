@@ -1,5 +1,9 @@
 # Changelog
 
+### [0.1.3](https://github.com/angellist/eslint-config-angellist/compare/0.1.1...0.1.3) - 2023-06-09
+
+* Use {...} for single-line blocks and do..end for multi-line blocks in Ruby
+
 ### [0.1.2](https://github.com/angellist/eslint-config-angellist/compare/0.1.1...0.1.2) - 2022-09-28
 
 * Use Rubocop instead of Prettier Ruby that wraps or merges lines
