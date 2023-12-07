@@ -9,7 +9,7 @@ Sharable ESLint, Prettier and Rubocop configuration for AngelList.
 ```sh
 cd ../frontend-project
 yarn add -D \
-  'git+https://github.com/angellist/eslint-config-angellist#0.1.3' \
+  'git+https://github.com/angellist/eslint-config-angellist#0.1.4' \
   '@typescript-eslint/eslint-plugin' \
   '@typescript-eslint/parser' \
   'eslint-config-airbnb-typescript' \
@@ -39,7 +39,7 @@ module.exports = {
 
 ```sh
 cd ../backend-project
-yarn add -D 'git+https://github.com/angellist/eslint-config-angellist#0.1.3'
+yarn add -D 'git+https://github.com/angellist/eslint-config-angellist#0.1.4'
 ```
 
 Add the following gems to `Gemfile` and then install them with `bundle install`

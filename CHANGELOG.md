@@ -1,5 +1,9 @@
 # Changelog
 
+### [0.1.4](https://github.com/angellist/eslint-config-angellist/compare/0.1.3...0.1.4) - 2023-12-06
+
+* Add no-console rule
+
 ### [0.1.3](https://github.com/angellist/eslint-config-angellist/compare/0.1.1...0.1.3) - 2023-06-09
 
 * Use {...} for single-line blocks and do..end for multi-line blocks in Ruby
