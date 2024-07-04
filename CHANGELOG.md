@@ -1,5 +1,9 @@
 # Changelog
 
+### [0.1.4](https://github.com/angellist/eslint-config-angellist/compare/0.1.4...0.1.5) - 2024-07-04
+
+* Add AssignmentInCondition rubocop ban rule
+
 ### [0.1.4](https://github.com/angellist/eslint-config-angellist/compare/0.1.3...0.1.4) - 2023-12-06
 
 * Add no-console rule
