@@ -15,6 +15,7 @@ require:
 AssignmentInCondition: { Enabled: true, AllowSafeAssignment: false } # `if foo = bar` <- BAD
 Layout/LineLength: { Enabled: true, Severity: warning, AutoCorrect: false } # lower severity, disable autocorrect
 Layout/EmptyLineAfterGuardClause: { Enabled: true }
+Layout/TrailingEmptyLines: { Enabled: true, EnforcedStyle: final_newline }
 Naming/InclusiveLanguage: { Enabled: false } # disable
 Naming/PredicateName: { Enabled: false } # disable, need to migrate our DB columns to use this one
 Style/DateTime: { Enabled: false } # disable

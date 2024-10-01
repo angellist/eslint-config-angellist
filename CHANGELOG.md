@@ -1,6 +1,10 @@
 # Changelog
 
-### [0.1.4](https://github.com/angellist/eslint-config-angellist/compare/0.1.4...0.1.5) - 2024-07-04
+### [0.1.6](https://github.com/angellist/eslint-config-angellist/compare/0.1.5...0.1.6) - 2024-10-01
+
+* Add Layout/TrailingEmptyLines rubocop rule
+
+### [0.1.5](https://github.com/angellist/eslint-config-angellist/compare/0.1.4...0.1.5) - 2024-07-04
 
 * Add AssignmentInCondition rubocop ban rule
 
