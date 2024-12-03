@@ -1,5 +1,9 @@
 # Changelog
 
+### [0.1.7](https://github.com/angellist/eslint-config-angellist/compare/0.1.6...0.1.7) - 2024-12-04
+
+* Add @ import group for Treasury
+
 ### [0.1.6](https://github.com/angellist/eslint-config-angellist/compare/0.1.5...0.1.6) - 2024-10-01
 
 * Add Layout/TrailingEmptyLines rubocop rule
