@@ -15,7 +15,7 @@ module.exports = {
       "error",
       {
         "groups": ["external", "internal", "object"],
-        "pathGroups": [{ "pattern": "~/**", "group": "internal" }],
+        "pathGroups": [{ "pattern": "~/**", "group": "internal" }, { "pattern": "@/**", "group": "internal" }],
         "newlines-between": "always",
         "alphabetize": { "order": "asc", "caseInsensitive": true },
       },
