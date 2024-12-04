@@ -37,48 +37,7 @@ module.exports = {
 
 #### For Ruby projects:
 
-```sh
-cd ../backend-project
-yarn add -D 'git+https://github.com/angellist/eslint-config-angellist#0.1.6'
-```
-
-Add the following gems to `Gemfile` and then install them with `bundle install`
-
-```rb
-group :development do
-  gem 'rubocop', '~> 1.36', require: false
-  gem 'rubocop-graphql', require: false
-  gem 'rubocop-performance', require: false
-  gem 'rubocop-rails', require: false
-  gem 'rubocop-rake', require: false
-  gem 'rubocop-rspec', require: false
-  gem 'rubocop-shopify', '~> 2.10', require: false
-  gem 'rubocop-thread_safety', require: false
-end
-```
-
-Create `.rubocop.yml`:
-
-```yml
-inherit_from: ./node_modules/eslint-config-angellist/.rubocop.yml
-
-# Modify the content below depending on your needs
-AllCops:
-  TargetRailsVersion: 6.0
-  TargetRubyVersion: 2.7
-  DisabledByDefault: true
-  Exclude:
-    - bin/*
-    - db/**/*
-    - node_modules/**/*
-    - public/**/*
-    - script/**/*
-    - tmp/**/*
-    - vendor/**/*
-
-# List of all available cops: https://docs.rubocop.org/rubocop/1.36/cops.html
-# List of all enabled cops: bundle exec rubocop rubocop --show-cops
-```
+We use [github.com/angellist/rubocop-angellist](https://github.com/angellist/rubocop-angellist).
 
 ### Pre-commit hooks
 
