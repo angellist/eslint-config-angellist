@@ -44,9 +44,14 @@ module.exports = {
     {
       files: ["**.ts?(x)"],
       rules: {
-        // TS supports this rule as a compiler setting
-        // See: https://www.typescriptlang.org/tsconfig#noUnusedLocals
-        "@typescript-eslint/no-unused-vars": "off"
+       '@typescript-eslint/no-unused-vars': [
+          'error',
+          {
+            // exclude "_" for lodash but allow _ as a prefix for unused var naming convention
+            argsIgnorePattern: '^_.+',
+            varsIgnorePattern: '^_.+',
+          },
+        ],
       }
     }
   ],
