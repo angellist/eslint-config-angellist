@@ -1,5 +1,9 @@
 # Changelog
 
+### [0.2.1](https://github.com/angellist/eslint-config-angellist/compare/0.2.0...0.2.1) - 2025-04-12
+
+* Enable `@typescript-eslint/no-unused-vars` rule
+
 ### [0.2.0](https://github.com/angellist/eslint-config-angellist/compare/0.1.7...0.2.0) - 2024-12-04
 
 * (Breaking) Remove rubocop references in lieu of https://github.com/angellist/rubocop-angellist.
